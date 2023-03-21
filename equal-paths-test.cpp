@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <iomanip>
 #include "equal-paths.h"
 using namespace std;
 
@@ -21,7 +22,7 @@ void setNode(Node* n, int key, Node* left=NULL, Node* right=NULL)
 void test1(const char* msg)
 {
   setNode(a,1,NULL, NULL);
-  cout << msg << ": " <<   equalPaths(a) << endl;
+  cout << boolalpha << msg << ": " <<   equalPaths(a) << endl;
 }
 
 void test2(const char* msg)
