@@ -616,8 +616,8 @@ template<typename Key, typename Value>
 void BinarySearchTree<Key, Value>::clear()
 {
     // TODO
-		//printRoot(root_);
 		while(root_ != NULL){
+			//printRoot(root_);
 			remove(root_->getKey());
 		}
 }
